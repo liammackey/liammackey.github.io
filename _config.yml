@@ -1,0 +1,39 @@
+# Site settings
+title: Conditional Zen
+description: 'A blog about Life and Coding'
+url: 'https://liammackey.github.io'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Liam Mackey'
+  email: liammac21@gmail.com
+  twitter_username: Liam_mackey_21
+  facebook_username: 
+  github_username:  liam-mackey
+  linkedin_username:  Liam Mackey
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
